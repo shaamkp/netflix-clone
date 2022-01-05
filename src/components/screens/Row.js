@@ -38,10 +38,13 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
 }
 
 const MainTitle = styled.h2`
-    
+    color: #fff;
+    font-weight: 800;
+    margin-left: 15px;
+    margin-top: 10px;
 `;
 const RowPosters = styled.div`
-  width: 100%;
+  width: 95%;
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;

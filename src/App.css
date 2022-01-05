@@ -24,3 +24,17 @@
   transition: all 0.4s ease;
   transform: scale(1.09);
 }
+.app{
+  background-color: #111;
+}
+.Nav{
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+.navLogo{
+  width: 150px;
+  object-fit: contain;
+}
