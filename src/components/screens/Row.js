@@ -75,6 +75,7 @@ const RowPosters = styled.div`
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
+  z-index: -5;
   &::-webkit-scrollbar{
       display: none;
   }
