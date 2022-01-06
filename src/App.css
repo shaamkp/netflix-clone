@@ -32,8 +32,15 @@
   top: 0;
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 12px;
+  transition: all 0.4s ease;
+  
 }
+.nav_black{
+  background-color: #111;
+  transition: all 1s ease;
+}
+
 .navLogo{
   width: 150px;
   object-fit: contain;

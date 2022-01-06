@@ -1,0 +1,2 @@
+->  set a useState variables(trailerUrl,setTrailerUrl)
+->  setTrailer Url in certain condition
