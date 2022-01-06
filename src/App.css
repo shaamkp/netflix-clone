@@ -32,13 +32,13 @@
   top: 0;
   display: flex;
   width: 100%;
-  padding: 12px;
-  transition: all 0.4s ease;
+  padding: 7px;
+  transition: all 1s ease-in;
   
 }
 .nav_black{
   background-color: #111;
-  transition: all 1s ease;
+  transition: all 1s ease-in;
 }
 
 .navLogo{

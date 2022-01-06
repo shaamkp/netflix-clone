@@ -13,10 +13,16 @@ function Banner() {
       const request = await axios.get(requests.fetchNetflixOriginals);
       setMovie(
         request.data.results[
-          Math.floor(Math.random() * request.data.results.length - 1) + 4
-          
+          Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
+      const interval = setInterval(() => {
+        setMovie(
+          request.data.results[
+            Math.floor(Math.random() * request.data.results.length - 1)
+          ]
+        );
+      }, 8000);
       return request
     }
     fetchData();
@@ -30,7 +36,7 @@ function Banner() {
         style={{
           backgroundSize: "Cover",
           backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-          backgroundRepeat: "no-repeat" 
+          backgroundRepeat: "no-repeat" ,
         }}
       >
         <BannerContents>
@@ -52,6 +58,7 @@ const Banners = styled.header`
     color: #fff;
     object-fit: contain;
     height: 448px;
+    
 `;
 const BannerContents = styled.div`
     margin-left: 30px;
